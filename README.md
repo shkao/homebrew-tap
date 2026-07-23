@@ -22,7 +22,7 @@ brew install --cask <cask-name>
 
 | Cask | Description | Version |
 |------|-------------|---------|
-| [nami](#nami) | Japanese regional FM radio streaming menu bar app | 1.0.0 |
+| [nami](#nami) | Japanese regional FM radio streaming menu bar app | 1.1.0 |
 
 ---
 
