@@ -7,7 +7,7 @@ cask "nami" do
   desc "Lightweight macOS menu bar app for streaming Japanese regional FM radio"
   homepage "https://github.com/shkao/Nami"
 
-  depends_on macos: ">= :sonoma"
+  depends_on macos: :sonoma
 
   app "Nami.app"
 
