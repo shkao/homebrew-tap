@@ -22,7 +22,7 @@ brew install --cask <cask-name>
 
 | Cask | Description | Version |
 |------|-------------|---------|
-| [nami](#nami) | Japanese regional FM radio streaming menu bar app | 1.1.0 |
+| [nami](#nami) | Japanese regional FM radio streaming menu bar app | 1.1.1 |
 
 ---
 
@@ -55,6 +55,8 @@ brew uninstall --cask nami
 
 - Stream 5 Japanese regional FM stations from the menu bar
 - Real-time signal quality indicator
+- Auto-reconnect when a stream or the network drops
+- Sleep timer and launch at login
 - Volume control with persistence
 - Quick station switching
 - Minimal resource usage (~30MB memory)
@@ -104,14 +106,15 @@ When a new version is released, update the cask formula:
 1. **Get the new SHA256 checksum:**
 
    ```bash
-   curl -sL https://github.com/shkao/Nami/releases/download/v1.1.0/Nami.zip | shasum -a 256
+   VERSION=1.1.1
+   curl -sL "https://github.com/shkao/Nami/releases/download/v${VERSION}/Nami.zip" | shasum -a 256
    ```
 
 2. **Update the cask file** (`Casks/nami.rb`):
 
    ```ruby
    cask "nami" do
-     version "1.1.0"  # Update version
+     version "1.1.1"  # Update version
      sha256 "new_sha256_here"  # Update checksum
      # ... rest unchanged
    end
@@ -123,7 +126,7 @@ When a new version is released, update the cask formula:
 
    ```bash
    git add Casks/nami.rb README.md
-   git commit -m "chore(nami): bump to v1.1.0"
+   git commit -m "chore(nami): bump to v${VERSION}"
    git push
    ```
 

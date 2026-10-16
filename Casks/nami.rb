@@ -1,6 +1,6 @@
 cask "nami" do
-  version "1.1.0"
-  sha256 "3fae9bb2e7c7ccfe977724a12b4a20e03028f6edf567be56a666b2e9752d1875"
+  version "1.1.1"
+  sha256 "330ae813b215f1a894c6ef596381db9370a83fa2ecc0c6f67b9132403308e5f0"
 
   url "https://github.com/shkao/Nami/releases/download/v#{version}/Nami.zip"
   name "Nami"
